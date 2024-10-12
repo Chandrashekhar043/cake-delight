@@ -1,0 +1,371 @@
+* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  /* Navigation */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #696f80;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .social-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-links li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  .social-links a {
+    color: #333; 
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .social-links i {
+    margin-right: 5px; /
+  }
+  
+  .navbar ul li {
+    margin: 0 10px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #466888;
+    border-radius: 5px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    height: 400px;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .about-us {
+    background-color: #f8f8f8;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .about-us p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Cake Categories */
+  .cake-categories {
+    padding: 40px 0;
+  }
+  
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .category-card {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .category-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .category-card h3 {
+    margin: 10px 0;
+  }
+  
+  .category-card p {
+    color: #777;
+  }
+  
+  /* Cake Details */
+  .cake-details {
+    background-color: #f8f8f8;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .cake-details img {
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .customize-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .customize-options label {
+    margin-right: 10px;
+  }
+  
+  .add-to-cart {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #218838;
+  }
+  
+  /* Shopping Cart */
+  .shopping-cart {
+    padding: 40px;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 600px;
+  }
+  
+  .cart-items {
+    margin-bottom: 20px;
+  }
+  
+  .cart-items div {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-total {
+    font-size: 1.5em;
+  }
+  
+  .checkout {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .checkout:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Photo Gallery */
+  .gallery {
+    padding: 40px;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    background-color: #f8f8f8;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .testimonials .testimonial {
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  .testimonials form {
+    margin-top: 20px;
+  }
+  
+  .testimonials textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .testimonials button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .testimonials button:hover {
+    background-color: #218838;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  footer ul li {
+    margin: 0;
+  }
+  
+  footer ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.social-links a {
+    color: white; 
+    text-decoration: none;
+    font-size: 20px; 
+}
+
+.social-links a:hover {
+    color: #ffcc00; 
+}
+
+/* Brand Name Styling */
+.brand-name {
+    font-size: 2em; 
+    font-weight: bold;
+    color: #fff; 
+    margin-right: auto; 
+    padding-left: 20px; 
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #333; 
+    padding: 10px 20px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin: 0 10px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  
+  .navbar ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  .social-links {
+    list-style: none;
+    padding: 0;
+    display: flex; 
+}
+
+
+
+

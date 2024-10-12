@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand-name">Cake Delight</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#cart">Cart</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <img src="images/hero-banner.jpg" alt="Best Cakes" class="hero-image">
+        <div class="hero-text">
+            <h1>Delicious Cakes for Every Occasion</h1>
+            <p>Order your favorite cakes online</p>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>We are a premium cake shop offering a wide variety of cakes for all occasions. Quality ingredients, artistic designs, and customer satisfaction are at the heart of what we do.</p>
+    </section>
+
+    <section id="categories" class="cake-categories">
+        <h2>Our Cake Categories</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="images/birthday-cake.jpg" alt="Birthday Cakes">
+                <h3>Birthday Cakes</h3>
+                <p>From $20</p>
+            </div>
+            <div class="category-card">
+                <img src="images/wedding-cake.jpg" alt="Wedding Cakes">
+                <h3>Wedding Cakes</h3>
+                <p>From $150</p>
+            </div>
+            <div class="category-card">
+                <img src="images/custom-cake.jpg" alt="Custom Cakes">
+                <h3>Custom Cakes</h3>
+                <p>From $30</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cake-details" id="cake-details">
+        <h2>Chocolate Fudge Cake</h2>
+        <img src="images/chocolate-cake.jpg" alt="Chocolate Fudge Cake">
+        <p>This rich chocolate cake is perfect for any chocolate lover. Customize with your favorite flavor and size.</p>
+        <div class="customize-options">
+            <label for="flavor">Flavor:</label>
+            <select id="flavor">
+                <option>Chocolate</option>
+                <option>Vanilla</option>
+                <option>Red Velvet</option>
+                <option>Sausage</option>
+                <option>Black forest</option>
+                <option>Pineapple</option>
+                <option>Butterscotch</option>
+                <option>Granny's Mahogany</option>
+                <option>Ant hill</option>
+                <option>Hermit</option>
+                <option>Coffee and Pancake Sausage</option>
+                <option>Cajun</option>
+            </select>
+
+            <label for="size">Size:</label>
+            <select id="size">
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+            </select>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </section>
+
+    <section id="cart" class="shopping-cart">
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+            </div>
+        <div class="cart-total">
+            <h3>Total: $<span id="total-price">0.00</span></h3>
+            <button class="checkout">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Photo Gallery</h2>
+        <div class="gallery-grid">
+            <img src="images/cake1.jpg" alt="Cake 1">
+            <img src="images/cake2.jpg" alt="Cake 2">
+            <img src="images/cake3.jpg" alt="Cake 3">
+            <img src="images/cake4.jpg" alt="Cake 4">
+            <img src="images/cake5.jpg" alt="Cake 5">
+            <img src="images/cake6.jpg" alt="Cake 6">
+            <img src="images/cake7.jpg" alt="Cake 7">
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Customer Testimonials</h2>
+        <div class="testimonial">
+            <p>"The best cakes in town! Highly recommended."</p>
+            <span> Sara.j</span>
+        </div>
+        <form id="testimonial-form">
+            <h3>Leave a Review</h3>
+            <textarea placeholder="Your review"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you! Please reach out to us by filling out the form below.</p>
+
+        <form action="#" method="post" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+      <p>© 2024 Cake Delight</p>
+      <p>Show us some love ❤ & connect with us!</p>
+  
+      <ul class="social-links">
+          <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li> 
+      </ul>
+  </footer>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
