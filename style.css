@@ -181,7 +181,7 @@ body {
   .shopping-cart {
     padding: 40px;
     text-align: center;
-    background-color: #f8f8f8;
+    background-color: #f8f8f8; 
     border-radius: 10px;
     margin: 40px auto;
     max-width: 600px;
